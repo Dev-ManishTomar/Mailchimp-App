@@ -38,7 +38,7 @@ app.post("/", function(req, res){
 		url:"https://us20.api.mailchimp.com/3.0/lists/926fc9d83a",
 		method: "POST",
 		headers:{
-			"Authorization":"Mansih a45291e0a91117566a29b13eeb3d54e1-us20" 
+			"Authorization":"Mansih 2561daf6c876e4791a96342f9eaa85c3-us20" 
 		},
 		body: jsonData
 	};
@@ -61,7 +61,7 @@ app.post("/", function(req, res){
 });
 });
 
-app.listen(3000,function(){
+app.listen(process.env.PORT || 3000,function(){
 	console.log("server is running");
 });
 
@@ -71,6 +71,6 @@ app.listen(3000,function(){
 
 
 
-// a45291e0a91117566a29b13eeb3d54e1-us20
+// 2561daf6c876e4791a96342f9eaa85c3-us20
 
 // 926fc9d83a
